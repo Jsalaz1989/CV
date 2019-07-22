@@ -1,0 +1,58 @@
+/* Source: https://flexbox.ninja/demos/website-header/ */
+
+/* Responsive images */
+.avatar {
+	max-width: 100%;
+    height: auto;
+    
+    height: 300px; 
+    width: 300px; 
+    border-radius: 100%;
+
+    margin-top: 120px;
+    position: absolute;
+    top: -90px;
+    right: 270px;
+}
+
+.header {
+    margin-top: 90px;
+    line-height: 90px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Inconsolata');
+
+.heading {
+    font-size: 3em;
+}
+
+.master {
+    font-family: Monsieur La Doulaise;
+}
+
+.engineering {
+    font-family: Inconsolata;
+}
+
+.contact {
+    font-size: 0.9em;
+    text-align: right;
+    line-height: 3.5em;
+}
+
+.tooltip-text {
+    font-size: 0.5em;   
+}
+
+.logo {
+    vertical-align: middle;
+    margin-left: 10px;
+    color: #d39ccd;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}

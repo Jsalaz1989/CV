@@ -1,0 +1,90 @@
+.ant-menu-root {
+    position: relative;
+    top: 75px;
+}
+
+.ant-layout-sider-trigger {
+    top: 50px;
+}
+
+.ant-layout-sider-collapsed  > .ant-layout-sider-trigger {
+    left: 24px;
+}
+
+.ant-menu-inline .ant-menu-item {
+    font-size: 0.8em;
+}
+
+.ant-menu-sub.ant-menu-inline {
+    padding-bottom: 15px;
+}
+
+.ant-layout-sider-children {
+    position: fixed;
+}
+
+.ant-menu.ant-menu-light.ant-menu-root.ant-menu-inline {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+}
+
+/* Imitate antd menu icon with custom icon */
+.custom-icon {
+    margin-right: 8px;
+    height: 14px;
+    width: 14px;
+    transition: fill 0.5s;
+    position: relative;
+    top: 1px;
+    /* vertical-align: middle; */
+}
+
+.custom-icon-nohover {
+    fill: white;
+}
+
+.custom-icon-hover {
+    fill: #d39ccd;
+}
+
+.menu-border {
+    /* background-color: red; */
+    height: 82vh;
+    padding-right: 10%;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: white;
+    /* opacity: 0.2 */
+}
+
+/* Narrower collapsed menu to hide hacky, custom icon stuff */
+.ant-menu-inline-collapsed {
+    width: 30px;
+}
+
+/* Don't want to see anchor ink */
+.ant-anchor-ink {
+    display: none;
+}
+
+/* Imitate submenu title with anchor links */
+.ant-anchor-link-title {
+    color: white;
+    font-size: 0.8em;
+    position: relative;
+    left: -18px;
+}
+
+.ant-anchor-link-title:hover {
+    color: #d39ccd;
+}
+
+.ant-anchor-link-title.ant-anchor-link-title-active {    
+    color: white;
+}
+
+.ant-anchor-link-title.ant-anchor-link-title-active:hover {    
+    color: #d39ccd;
+}
+
