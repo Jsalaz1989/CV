@@ -1,0 +1,11 @@
+.template-link {
+    /* font-size: 4em; */
+    cursor: pointer;
+    font-weight: bold;
+    color: #d39ccd;
+    transition: font-size 0.5s;
+}
+
+.template-link:hover {
+    font-size: 1.03em;
+}

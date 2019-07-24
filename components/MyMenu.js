@@ -38,21 +38,21 @@ export default () => {
 					key="contact"
 					title={<><Icon type="mail" /><span>Contact</span></>}
 				>
-					<Menu.Item key="email" onClick={copyEmail}>
+					<Menu.Item key="c-email" onClick={copyEmail}>
 						<Tooltip placement='right' title='Copy my email to your clipboard' autoAdjustOverflow={false} >
 						<a>
 							Email
 						</a>
 						</Tooltip>
 					</Menu.Item>
-					<Menu.Item key="linkedin">
+					<Menu.Item key="c-linkedin">
 						<Tooltip placement='right' title='Open my profile in a new tab' autoAdjustOverflow={false} >
 						<a href='https://linkedin.com/in/jaime-salazar-lahera' target='_blank'>
 							LinkedIn
 						</a>
 						</Tooltip>
 					</Menu.Item>
-					<Menu.Item key="github">
+					<Menu.Item key="c-github">
 						<Tooltip placement='right' title='Open my repo in a new tab' autoAdjustOverflow={false} >
 						<a href='https://github.com/jsalaz1989' target='_blank'>
 							GitHub
@@ -64,12 +64,12 @@ export default () => {
 					key="bio"
 					title={<><Icon type="user" /><span>Bio</span></>}
 				>
-					<Menu.Item key="about">
+					<Menu.Item key="b-about">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#bio" title='About' />
 						</Anchor>
 					</Menu.Item>
-					<Menu.Item key="cv">
+					<Menu.Item key="b-cv">
 						<Tooltip placement='right' title='Download as PDF' autoAdjustOverflow={false} >
 							<a href='../static/cv.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>
 								CV
@@ -81,12 +81,12 @@ export default () => {
 					key="highlights"
 					title={<><Icon type="trophy" /><span>Highlights</span></>}
 				>
-					<Menu.Item key="master"	onClick={() => openHighlight(tiles.robot.title)}>Master's Thesis</Menu.Item>
-					<Menu.Item key="solar" onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
-					<Menu.Item key="rpa" onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
-					<Menu.Item key="english" onClick={() => openHighlight(tiles.english.title)}>English</Menu.Item>
-					<Menu.Item key="plc" onClick={() => openHighlight(tiles.bollos.title)}>PLC</Menu.Item>
-					<Menu.Item key="dobot" onClick={() => openHighlight(tiles.dobot.title)}>Dobot</Menu.Item>
+					<Menu.Item key="h-master"	onClick={() => openHighlight(tiles.robot.title)}>Master's Thesis</Menu.Item>
+					<Menu.Item key="h-solar" onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
+					<Menu.Item key="h-rpa" onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
+					<Menu.Item key="h-english" onClick={() => openHighlight(tiles.english.title)}>English</Menu.Item>
+					<Menu.Item key="h-plc" onClick={() => openHighlight(tiles.bollos.title)}>PLC</Menu.Item>
+					<Menu.Item key="h-dobot" onClick={() => openHighlight(tiles.dobot.title)}>Dobot</Menu.Item>
 				</SubMenu>
 				<SubMenu
 					key="academics"
@@ -102,12 +102,12 @@ export default () => {
 						</div>
 					}
 				>
-					<Menu.Item key="master">
+					<Menu.Item key="a-master">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#masters" title="Master's Degree" />
 						</Anchor>
 					</Menu.Item>
-					<Menu.Item key="undergrad">
+					<Menu.Item key="a-undergrad">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#undergrad" title="Bachelor's Degree" />
 						</Anchor>
@@ -127,12 +127,12 @@ export default () => {
 						</div>
 					}
 				>
-					<Menu.Item key="solar1">
+					<Menu.Item key="p-solar1">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#solar1" title="PV Sales and Tech" />
 						</Anchor>
 					</Menu.Item>
-					<Menu.Item key="solar2">
+					<Menu.Item key="p-solar2">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#solar2" title="PV Apprentice" />
 						</Anchor>
@@ -142,17 +142,17 @@ export default () => {
 					key="skills"
 					title={<><Icon type='star' /><span>Skills</span></>}
 				>
-					<Menu.Item key="english">
+					<Menu.Item key="s-english">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#english" title="Fluent English" />
 						</Anchor>
 					</Menu.Item>
-					<Menu.Item key="rpa">
+					<Menu.Item key="s-rpa">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#rpa" title="RPA" />
 						</Anchor>
 					</Menu.Item>
-					<Menu.Item key="coding">
+					<Menu.Item key="s-coding">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#coding" title="Coding" />
 						</Anchor>

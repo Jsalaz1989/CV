@@ -1,3 +1,5 @@
+import './MyComponentData.css'
+
 export const tiles = {
     robot: {
         title: 'Autonomous Agricultural Robot',
@@ -139,19 +141,19 @@ export const tiles = {
     },
     english: {
         title: 'Fluent English',
-        source: '../static/images/rpa/diploma0.jpg',
+        source: '../static/images/english.png',
         paragraphs: [
             `I learned English at a young age in bilingual schools (in Spanish-speaking countries) as well as regular schools 
             (in English-speaking countries). Later on I finished my undergraduate degree at the University of Maryland, 
             College Park, near Washington, DC.`,
             `I had worked at different jobs for several years throughout my university studies and immediately after graduation I was
-            offered a position in Washington, DC`,
+            offered a position in Washington, DC.`,
             `I can speak, read, and write proficiently in English (and, of course, also in Spanish) but I will let the video do the 
             talking (pun intended)`       
         ],                         
         slides: [
             {
-                source: 'https://www.youtube.com/embed/i_Wq2fQJ8BE',
+                source: 'https://www.youtube.com/embed/aH_a2Mnv2xY',
                 description: 'An example of my English and Spanish speaking level'
             },
         ],
@@ -224,6 +226,7 @@ export const tiles = {
     }
 }
 
+
 export const experiences = {
     masters : {
         id: 'masters',
@@ -232,11 +235,11 @@ export const experiences = {
         organization: 'ETS Ingeniería y Diseño Industrial, Universidad Politécnica de Madrid',
         location: 'Madrid, Spain',
         bullets: [
-            `Master's Thesis - <button>Autonomous Agricultural Robot</button>`,
+            `Master's Thesis - <span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Autonomous Agricultural Robot</span>`,
             'Programming Arduinos (I2C, MQTT, control PID) and Raspberry Pis (Flask, MongoDB)',
-            'Programming Siemens PLC with STEP7 y WinCC',
+            `Programming Siemens PLC with <span class='template-link' onclick="document.getElementById('${tiles.bollos.title}').click()">STEP7 and WinCC</span>`,
             'Programming with NI LabView',  
-            'Programming robot kinematics with MATLAB',
+            `Programming <span class='template-link' onclick="document.getElementById('${tiles.dobot.title}').click()">robot kinematics</span> with MATLAB`,
             'Simulation of electrical (QUCS) and mechanical (Festo FluidSIM, SAM) systems'
         ]
     },
@@ -296,7 +299,7 @@ export const experiences = {
         organization: 'Solar Solution LLC',
         location: 'Washington, DC, USA',
         bullets: [
-            'PV system design (residential and commercial) with SketchUp, SolarNexus, and Google Earth',
+            `<span class='template-link' onclick="document.getElementById('${tiles.solar.title}').click()">PV system design</span> (residential and commercial) with SketchUp, SolarNexus, and Google Earth`,
             'Automated document generation (JavaScript, Excel, VBA) of proposals, interconnection agreements, and contracts',
             'Participation in local electrical inspections',
             'On-site technical support and troubleshooting'
@@ -319,7 +322,7 @@ export const skills = {
         id: 'english',
         name: 'Native English and Spanish',
         bullets: [
-            'Native English (and Spanish) speaking, writing, and reading',
+            `<span class='template-link' onclick="document.getElementById('${tiles.english.title}').click()">Native English</span> (and Spanish) speaking, reaading, and writing`,
             'Schooling abroad, especially university in the USA, as well as several years of working there',
         ]
     },
@@ -327,7 +330,7 @@ export const skills = {
         id: 'rpa',
         name: 'Software',
         bullets: [
-            'UiPath (RPA Developer Advanced Certification 2019)',
+            `<span class='template-link' onclick="document.getElementById('${tiles.rpa.title}').click()">UiPath</span> RPA Developer Advanced Certification 2019`,
             'VBA macros in Word and Excel, JavaScript in Adobe PDF',
             'Siemens STEP7 and WinCC',
             'Google SketchUp',
@@ -342,7 +345,7 @@ export const skills = {
         id: 'coding',
         name: 'Programming Languages',
         bullets: [
-            'Python (especially Flask )',
+            `<span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Python</span> (especially Flask)`,
             'C (C++ if you count the Arduino language)',
             'SQL (SQLite3, PostgreSQL)',
             'Javascript (especially ReactJS)',

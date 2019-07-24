@@ -104,7 +104,8 @@ const Experience = ({ experience }) => (
             {experience.organization}, <span className='location'>{experience.location}</span>
         </Row>
         <ul>
-            {experience.bullets.map((bullet, key) => <li key={key}>{bullet}</li>)}
+            {/* {experience.bullets.map((bullet, key) => <li key={key}>{bullet}</li>)} */}
+            {experience.bullets.map((bullet, key) => <li key={key} dangerouslySetInnerHTML={{__html: bullet }} />)}
         </ul>
     </div>
 )
@@ -115,7 +116,7 @@ const Skill = ({ skill }) => (
             {skill.name}
         </Row>
         <ul>
-            {skill.bullets.map((detail, key) => <li key={key}>{detail}</li>)}
+            {skill.bullets.map((detail, key) => <li key={key} dangerouslySetInnerHTML={{__html: detail }} />)}
         </ul>
     </div>
 )
@@ -128,7 +129,7 @@ export default () => (
             <p>Interested in programming, robotics, automation (especially RPA), solar energy, and the environment.</p>
             <p>Continuous learner.</p>
             <p className='cv-container'>
-                Feel free to <a href='../static/cv.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>download my CV</a> 
+                Feel free to <a href='../static/CV - Jaime Salazar Lahera.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>download my CV</a> 
             </p>
         </div>
         <div className='entry'>
@@ -142,12 +143,10 @@ export default () => (
                 <Tile tile={tiles.bollos} />
                 <Tile tile={tiles.dobot} />
             </div>
-            <div className='blocking' />
-
             <p>I like to dabble in full-stack web programming and experiment with different technologies</p>
             <ul>
                 <li>This interactive CV/portfolio is built with NextJS, a server-side rendering framework for ReactJS</li>
-                <li>I have a hobby project at <a href='http://jplusplus.pythonanywhere.com/' title="N2T">jplusplus.pythonanywhere.com</a>, where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend</li>
+                <li>I have a hobby project at <a href='http://jplusplus.pythonanywhere.com/' title="N2T">jplusplus.pythonanywhere.com</a>, where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database</li>
             </ul>
         </div>
         <div className='entry'>

@@ -90,12 +90,14 @@
 
     padding-top: 5%;
     padding-bottom: 5%;
-    /* padding-left: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
-    /* left: -5%; */
+    left: -5%;
+    width: 105%;
 
     height: 250px;
-    width: 100%;
+    /* width: 100%; */
 
     /* clip-path: polygon(0% 0%, 200% 0, 800% 50%, 0 100%); */
 }
@@ -181,24 +183,13 @@
     color: white;
     font-size: 0.8em;
     margin-bottom: 20px;
-
   }
   
-/* .ant-carousel .slick-slide div {
-    color: #fff;
-} */
 
-/* .slick-slide.slick-active.slick-current {
-    height: 500px;
-} */
 
 .slick-dots.slick-dots-bottom > li {
     background-color: transparent;
 }
-
-/* .ant-carousel .slick-dots li.slick-active button {
-    background-color: whitesmoke;
-} */
 
 .ant-carousel .slick-dots li button {
     background-color: azure;

@@ -93,6 +93,17 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/MyComponentData.css":
+/*!****************************************!*\
+  !*** ./components/MyComponentData.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./components/MyContent.css":
 /*!**********************************!*\
   !*** ./components/MyContent.css ***!
@@ -362,12 +373,15 @@ var Experience = function Experience(_ref2) {
   }, experience.bullets.map(function (bullet, key) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
       key: key,
+      dangerouslySetInnerHTML: {
+        __html: bullet
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107
+        lineNumber: 108
       },
       __self: this
-    }, bullet);
+    });
   })));
 };
 
@@ -378,7 +392,7 @@ var Skill = function Skill(_ref3) {
     className: "exp-skill",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
@@ -388,24 +402,27 @@ var Skill = function Skill(_ref3) {
     className: "position",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }, skill.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 118
     },
     __self: this
   }, skill.bullets.map(function (detail, key) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
       key: key,
+      dangerouslySetInnerHTML: {
+        __html: detail
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118
+        lineNumber: 119
       },
       __self: this
-    }, detail);
+    });
   })));
 };
 
@@ -414,21 +431,21 @@ var Skill = function Skill(_ref3) {
     className: "content-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     className: "divide",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 127
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -437,54 +454,54 @@ var Skill = function Skill(_ref3) {
     id: "bio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 127
     },
     __self: this
   }), "Bio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 128
     },
     __self: this
   }, "Graduate in MS Electromechanical Engineering at UPM (Spain) with a diverse background."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 129
     },
     __self: this
   }, "Interested in programming, robotics, automation (especially RPA), solar energy, and the environment."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: this
   }, "Continuous learner."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "cv-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 131
     },
     __self: this
   }, "Feel free to ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "../static/cv.pdf",
+    href: "../static/CV - Jaime Salazar Lahera.pdf",
     title: "CV - Jaime Salazar Lahera",
     download: "CV - Jaime Salazar Lahera",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 132
     },
     __self: this
   }, "download my CV"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 135
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 136
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -492,93 +509,86 @@ var Skill = function Skill(_ref3) {
     className: "divider-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 136
     },
     __self: this
   }), "Hightlights"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 137
     },
     __self: this
   }, "Take a look at some of my projects, achievements, and experiences through the years"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "tiles-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 138
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].robot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 139
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].solar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 140
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].rpa,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 141
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].english,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 142
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].bollos,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 143
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].dobot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 144
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "blocking",
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 146
     },
     __self: this
   }, "I like to dabble in full-stack web programming and experiment with different technologies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 147
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 148
     },
     __self: this
   }, "This interactive CV/portfolio is built with NextJS, a server-side rendering framework for ReactJS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 149
     },
     __self: this
   }, "I have a hobby project at ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -586,116 +596,116 @@ var Skill = function Skill(_ref3) {
     title: "N2T",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 149
     },
     __self: this
-  }, "jplusplus.pythonanywhere.com"), ", where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "jplusplus.pythonanywhere.com"), ", where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 152
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 153
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_graduation_hat_svg__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 153
     },
     __self: this
   }), "Academics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].masters,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 154
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].coursesETSIDI,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 155
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].coursesMC,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 156
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].undergrad,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 157
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].associates,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 158
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].montes,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 159
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 161
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 162
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_briefcase_svg__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 162
     },
     __self: this
   }), "Professional"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].solar1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 163
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].solar2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 164
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 166
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 167
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -703,35 +713,35 @@ var Skill = function Skill(_ref3) {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 167
     },
     __self: this
   }), "Skills"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].english,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 168
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "skill-bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 169
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].software,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 170
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].coding,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 171
     },
     __self: this
   }))));
@@ -751,6 +761,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tiles", function() { return tiles; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "experiences", function() { return experiences; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skills", function() { return skills; });
+/* harmony import */ var _MyComponentData_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MyComponentData.css */ "./components/MyComponentData.css");
+/* harmony import */ var _MyComponentData_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_MyComponentData_css__WEBPACK_IMPORTED_MODULE_0__);
+
 var tiles = {
   robot: {
     title: 'Autonomous Agricultural Robot',
@@ -830,10 +843,10 @@ var tiles = {
   },
   english: {
     title: 'Fluent English',
-    source: '../static/images/rpa/diploma0.jpg',
-    paragraphs: ["I learned English at a young age in bilingual schools (in Spanish-speaking countries) as well as regular schools \n            (in English-speaking countries). Later on I finished my undergraduate degree at the University of Maryland, \n            College Park, near Washington, DC.", "I had worked at different jobs for several years throughout my university studies and immediately after graduation I was\n            offered a position in Washington, DC", "I can speak, read, and write proficiently in English (and, of course, also in Spanish) but I will let the video do the \n            talking (pun intended)"],
+    source: '../static/images/english.png',
+    paragraphs: ["I learned English at a young age in bilingual schools (in Spanish-speaking countries) as well as regular schools \n            (in English-speaking countries). Later on I finished my undergraduate degree at the University of Maryland, \n            College Park, near Washington, DC.", "I had worked at different jobs for several years throughout my university studies and immediately after graduation I was\n            offered a position in Washington, DC.", "I can speak, read, and write proficiently in English (and, of course, also in Spanish) but I will let the video do the \n            talking (pun intended)"],
     slides: [{
-      source: 'https://www.youtube.com/embed/i_Wq2fQJ8BE',
+      source: 'https://www.youtube.com/embed/aH_a2Mnv2xY',
       description: 'An example of my English and Spanish speaking level'
     }]
   },
@@ -884,7 +897,7 @@ var experiences = {
     date: 'February 2019',
     organization: 'ETS Ingeniería y Diseño Industrial, Universidad Politécnica de Madrid',
     location: 'Madrid, Spain',
-    bullets: ["Master's Thesis - <button>Autonomous Agricultural Robot</button>", 'Programming Arduinos (I2C, MQTT, control PID) and Raspberry Pis (Flask, MongoDB)', 'Programming Siemens PLC with STEP7 y WinCC', 'Programming with NI LabView', 'Programming robot kinematics with MATLAB', 'Simulation of electrical (QUCS) and mechanical (Festo FluidSIM, SAM) systems']
+    bullets: ["Master's Thesis - <span class='template-link' onclick=\"document.getElementById('".concat(tiles.robot.title, "').click()\">Autonomous Agricultural Robot</span>"), 'Programming Arduinos (I2C, MQTT, control PID) and Raspberry Pis (Flask, MongoDB)', "Programming Siemens PLC with <span class='template-link' onclick=\"document.getElementById('".concat(tiles.bollos.title, "').click()\">STEP7 and WinCC</span>"), 'Programming with NI LabView', "Programming <span class='template-link' onclick=\"document.getElementById('".concat(tiles.dobot.title, "').click()\">robot kinematics</span> with MATLAB"), 'Simulation of electrical (QUCS) and mechanical (Festo FluidSIM, SAM) systems']
   },
   coursesETSIDI: {
     position: 'Undergraduate Courses',
@@ -928,7 +941,7 @@ var experiences = {
     date: 'Junes 2013 - June 2015',
     organization: 'Solar Solution LLC',
     location: 'Washington, DC, USA',
-    bullets: ['PV system design (residential and commercial) with SketchUp, SolarNexus, and Google Earth', 'Automated document generation (JavaScript, Excel, VBA) of proposals, interconnection agreements, and contracts', 'Participation in local electrical inspections', 'On-site technical support and troubleshooting']
+    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.solar.title, "').click()\">PV system design</span> (residential and commercial) with SketchUp, SolarNexus, and Google Earth"), 'Automated document generation (JavaScript, Excel, VBA) of proposals, interconnection agreements, and contracts', 'Participation in local electrical inspections', 'On-site technical support and troubleshooting']
   },
   solar2: {
     id: 'solar2',
@@ -943,17 +956,17 @@ var skills = {
   english: {
     id: 'english',
     name: 'Native English and Spanish',
-    bullets: ['Native English (and Spanish) speaking, writing, and reading', 'Schooling abroad, especially university in the USA, as well as several years of working there']
+    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.english.title, "').click()\">Native English</span> (and Spanish) speaking, reaading, and writing"), 'Schooling abroad, especially university in the USA, as well as several years of working there']
   },
   software: {
     id: 'rpa',
     name: 'Software',
-    bullets: ['UiPath (RPA Developer Advanced Certification 2019)', 'VBA macros in Word and Excel, JavaScript in Adobe PDF', 'Siemens STEP7 and WinCC', 'Google SketchUp', 'LabView', 'MATLAB', 'QUCS', 'FluidSIM', 'SAM']
+    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.rpa.title, "').click()\">UiPath</span> RPA Developer Advanced Certification 2019"), 'VBA macros in Word and Excel, JavaScript in Adobe PDF', 'Siemens STEP7 and WinCC', 'Google SketchUp', 'LabView', 'MATLAB', 'QUCS', 'FluidSIM', 'SAM']
   },
   coding: {
     id: 'coding',
     name: 'Programming Languages',
-    bullets: ['Python (especially Flask )', 'C (C++ if you count the Arduino language)', 'SQL (SQLite3, PostgreSQL)', 'Javascript (especially ReactJS)', 'HTML, CSS', 'Standard use of Linux, SSH, and git', 'Basic knowledge of x86 assembly (AT&T)']
+    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.robot.title, "').click()\">Python</span> (especially Flask)"), 'C (C++ if you count the Arduino language)', 'SQL (SQLite3, PostgreSQL)', 'Javascript (especially ReactJS)', 'HTML, CSS', 'Standard use of Linux, SSH, and git', 'Basic knowledge of x86 assembly (AT&T)']
   }
 };
 
@@ -1341,7 +1354,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "email",
+    key: "c-email",
     onClick: _helpers_copyEmail__WEBPACK_IMPORTED_MODULE_6__["copyEmail"],
     __source: {
       fileName: _jsxFileName,
@@ -1364,7 +1377,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "Email"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "linkedin",
+    key: "c-linkedin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
@@ -1388,7 +1401,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "LinkedIn"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "github",
+    key: "c-github",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
@@ -1433,7 +1446,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "about",
+    key: "b-about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -1456,7 +1469,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "cv",
+    key: "b-cv",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
@@ -1502,7 +1515,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "master",
+    key: "h-master",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].robot.title);
     },
@@ -1512,7 +1525,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "Master's Thesis"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "solar",
+    key: "h-solar",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].solar.title);
     },
@@ -1522,7 +1535,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "Solar"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "rpa",
+    key: "h-rpa",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].rpa.title);
     },
@@ -1532,7 +1545,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "RPA"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "english",
+    key: "h-english",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].english.title);
     },
@@ -1542,7 +1555,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "English"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "plc",
+    key: "h-plc",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].bollos.title);
     },
@@ -1552,7 +1565,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, "PLC"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "dobot",
+    key: "h-dobot",
     onClick: function onClick() {
       return openHighlight(_components_MyContentData__WEBPACK_IMPORTED_MODULE_7__["tiles"].dobot.title);
     },
@@ -1595,7 +1608,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "master",
+    key: "a-master",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 105
@@ -1618,7 +1631,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "undergrad",
+    key: "a-undergrad",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 110
@@ -1674,7 +1687,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "solar1",
+    key: "p-solar1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 130
@@ -1697,7 +1710,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "solar2",
+    key: "p-solar2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 135
@@ -1741,7 +1754,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "english",
+    key: "s-english",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 145
@@ -1764,7 +1777,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "rpa",
+    key: "s-rpa",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 150
@@ -1787,7 +1800,7 @@ var Link = antd__WEBPACK_IMPORTED_MODULE_2__["Anchor"].Link;
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
-    key: "coding",
+    key: "s-coding",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 155

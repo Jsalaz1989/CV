@@ -20981,7 +20981,8 @@ div.ant-typography-edit-content {
 
 .ant-menu-root {
     position: relative;
-    top: 75px;
+    top: 55px;
+    left: 100px;
 }
 
 .ant-layout-sider-trigger {
@@ -21007,7 +21008,9 @@ div.ant-typography-edit-content {
 .ant-menu.ant-menu-light.ant-menu-root.ant-menu-inline {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 70vh;
+    height: 80vh;
+    margin-bottom: 70%;
+
 }
 
 /* Imitate antd menu icon with custom icon */
@@ -21031,11 +21034,13 @@ div.ant-typography-edit-content {
 
 .menu-border {
     /* background-color: red; */
-    height: 82vh;
+    height: 90vh;
     padding-right: 10%;
     border-right-style: solid;
     border-width: 1px;
     border-color: white;
+    position: fixed;
+    left: -40px;
     /* opacity: 0.2 */
 }
 
@@ -21068,8 +21073,17 @@ div.ant-typography-edit-content {
 .ant-anchor-link-title.ant-anchor-link-title-active:hover {    
     color: #d39ccd;
 }
+.template-link {
+    /* font-size: 4em; */
+    cursor: pointer;
+    font-weight: bold;
+    color: #d39ccd;
+    transition: font-size 0.5s;
+}
 
-
+.template-link:hover {
+    font-size: 1.03em;
+}
 /* Source: https://flexbox.ninja/demos/website-header/ */
 
 /* Responsive images */
@@ -21218,12 +21232,14 @@ div.ant-typography-edit-content {
 
     padding-top: 5%;
     padding-bottom: 5%;
-    /* padding-left: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
-    /* left: -5%; */
+    left: -5%;
+    width: 105%;
 
     height: 250px;
-    width: 100%;
+    /* width: 100%; */
 
     /* clip-path: polygon(0% 0%, 200% 0, 800% 50%, 0 100%); */
 }
@@ -21309,24 +21325,13 @@ div.ant-typography-edit-content {
     color: white;
     font-size: 0.8em;
     margin-bottom: 20px;
-
   }
   
-/* .ant-carousel .slick-slide div {
-    color: #fff;
-} */
 
-/* .slick-slide.slick-active.slick-current {
-    height: 500px;
-} */
 
 .slick-dots.slick-dots-bottom > li {
     background-color: transparent;
 }
-
-/* .ant-carousel .slick-dots li.slick-active button {
-    background-color: whitesmoke;
-} */
 
 .ant-carousel .slick-dots li button {
     background-color: azure;
