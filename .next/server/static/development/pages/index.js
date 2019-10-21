@@ -277,8 +277,7 @@ var Tile = function Tile(_ref) {
     __self: this
   }, tile.slides.map(function (slide, key) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      key: key // style={{ backgroundImage: `url(static/images/${slide.source})` }}
-      ,
+      key: key,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 69
@@ -291,7 +290,7 @@ var Tile = function Tile(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 71
       },
       __self: this
     }) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
@@ -305,13 +304,13 @@ var Tile = function Tile(_ref) {
       crossOrigin: "true",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 72
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 83
       },
       __self: this
     }, slide.description));
@@ -325,7 +324,7 @@ var Experience = function Experience(_ref2) {
     className: "exp-skill",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 96
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
@@ -335,39 +334,39 @@ var Experience = function Experience(_ref2) {
     className: "butt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 97
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "position",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 98
     },
     __self: this
   }, experience.position), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 99
     },
     __self: this
   }, experience.date)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 101
     },
     __self: this
   }, experience.organization, ", ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "location",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 102
     },
     __self: this
   }, experience.location)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 104
     },
     __self: this
   }, experience.bullets.map(function (bullet, key) {
@@ -378,7 +377,7 @@ var Experience = function Experience(_ref2) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108
+        lineNumber: 105
       },
       __self: this
     });
@@ -392,7 +391,7 @@ var Skill = function Skill(_ref3) {
     className: "exp-skill",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 111
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
@@ -402,13 +401,13 @@ var Skill = function Skill(_ref3) {
     className: "position",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 112
     },
     __self: this
   }, skill.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 115
     },
     __self: this
   }, skill.bullets.map(function (detail, key) {
@@ -419,7 +418,7 @@ var Skill = function Skill(_ref3) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119
+        lineNumber: 116
       },
       __self: this
     });
@@ -431,21 +430,21 @@ var Skill = function Skill(_ref3) {
     className: "content-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 122
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 123
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     className: "divide",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 124
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -454,54 +453,54 @@ var Skill = function Skill(_ref3) {
     id: "bio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 124
     },
     __self: this
   }), "Bio"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 125
     },
     __self: this
-  }, "Graduate in MS Electromechanical Engineering at UPM (Spain) with a diverse background."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+  }, "Graduate in MS Electromechanical Engineering at UPM (Madrid, Spain) with a diverse background."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 126
     },
     __self: this
-  }, "Interested in programming, robotics, automation (especially RPA), solar energy, and the environment."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+  }, "Interested in solar photovoltaics and the environment, as well as programming, robotics, and automation (especially RPA)."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 127
     },
     __self: this
   }, "Continuous learner."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "cv-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 128
     },
     __self: this
   }, "Feel free to ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "../static/CV - Jaime Salazar Lahera.pdf",
+    href: "../static/Curriculum Vitae - Jaime Salazar Lahera.pdf",
     title: "CV - Jaime Salazar Lahera",
     download: "CV - Jaime Salazar Lahera",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 129
     },
     __self: this
   }, "download my CV"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 132
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 133
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -509,86 +508,86 @@ var Skill = function Skill(_ref3) {
     className: "divider-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 133
     },
     __self: this
   }), "Hightlights"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 134
     },
     __self: this
   }, "Take a look at some of my projects, achievements, and experiences through the years"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "tiles-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 135
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].robot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 136
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].solar,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 137
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].rpa,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 138
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].english,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 139
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].bollos,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 140
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Tile, {
     tile: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["tiles"].dobot,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 141
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 143
     },
     __self: this
   }, "I like to dabble in full-stack web programming and experiment with different technologies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 144
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 145
     },
     __self: this
   }, "This interactive CV/portfolio is built with NextJS, a server-side rendering framework for ReactJS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 146
     },
     __self: this
   }, "I have a hobby project at ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -596,116 +595,116 @@ var Skill = function Skill(_ref3) {
     title: "N2T",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 146
     },
     __self: this
   }, "jplusplus.pythonanywhere.com"), ", where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 149
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 150
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_graduation_hat_svg__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 150
     },
     __self: this
   }), "Academics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].masters,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 151
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].coursesETSIDI,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 152
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].coursesMC,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 153
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].undergrad,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 154
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].associates,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 155
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].montes,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 156
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
+      lineNumber: 158
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 159
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_static_briefcase_svg__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162
+      lineNumber: 159
     },
     __self: this
   }), "Professional"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].solar1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163
+      lineNumber: 160
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Experience, {
     experience: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["experiences"].solar2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 161
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "entry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 163
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 164
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -713,35 +712,35 @@ var Skill = function Skill(_ref3) {
     className: "divider-icon-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 164
     },
     __self: this
   }), "Skills"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].english,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 165
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "skill-bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 166
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].software,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 167
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Skill, {
     skill: _MyContentData__WEBPACK_IMPORTED_MODULE_6__["skills"].coding,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 168
     },
     __self: this
   }))));
@@ -863,7 +862,7 @@ var tiles = {
     }]
   },
   dobot: {
-    title: "Master's Internship",
+    title: 'Master´s Internship',
     source: '../static/images/dobot/dobot0.jpg',
     paragraphs: ["Our robotics professor asked a colleague and I to produce a series of laboratory exercises for his undergraduate \n            classes. The university had just purchased a couple of Dobot Magician robotic arms and we were in charge of finding \n            out how it worked and how we could make students suffer with it.", "We came up with exercises regarding the robot's direct and inverse kinematics to execute simple routines such as \n            drawing an arc on a piece of paper. We also delved a bit into the Jacobian matrices to study the robot's velocities \n            and we ultimately asked the students to create a little process to pick up an item, manipulate and move it around in \n            a certain trajectory, to finally drop the object in a specified spot. The robot was controlled through both its \n            proprietary software as well as through Matlab scripts accessing the vendor's API.", "I'm a strong believer in learning with real-life practice and I was glad to apply the knowledge gained in my \n            robotics course to this little robot. I'm even more glad to have communicated with the Machine and I, for one, \n            welcome our new robot overlords."],
     slides: [{
@@ -931,8 +930,8 @@ var experiences = {
   montes: {
     position: "Bachelor's Degree in Forestry Engineering",
     date: 'Spring 2009',
-    organization: 'Montgomery College',
-    location: 'Maryland, USA',
+    organization: 'ETS Ingeniería de Montes, Universidad Politécnica de Madrid',
+    location: 'Madrid, Spain',
     bullets: ['First and second year before transferring to the United States']
   },
   solar1: {
@@ -966,7 +965,7 @@ var skills = {
   coding: {
     id: 'coding',
     name: 'Programming Languages',
-    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.robot.title, "').click()\">Python</span> (especially Flask)"), 'C (C++ if you count the Arduino language)', 'SQL (SQLite3, PostgreSQL)', 'Javascript (especially ReactJS)', 'HTML, CSS', 'Standard use of Linux, SSH, and git', 'Basic knowledge of x86 assembly (AT&T)']
+    bullets: ["<span class='template-link' onclick=\"document.getElementById('".concat(tiles.robot.title, "').click()\">Python</span> (especially Flask)"), 'C (and C++ ~Arduino)', 'SQL (SQLite3, PostgreSQL)', 'Javascript (especially ReactJS)', 'HTML, CSS', 'Standard use of Linux, SSH, and git', 'Basic knowledge of x86 assembly (AT&T)']
   }
 };
 
@@ -1143,32 +1142,18 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
       lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "master",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Master "), "of", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "engineering",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, " Engineering"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  }, "Master of Engineering")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Col"], {
     span: 8,
     className: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, "Email", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Tooltip"], {
@@ -1177,7 +1162,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     autoAdjustOverflow: false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
@@ -1186,13 +1171,13 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     onClick: _helpers_copyEmail_js__WEBPACK_IMPORTED_MODULE_3__["copyEmail"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, "Connect", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Tooltip"], {
@@ -1201,7 +1186,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     autoAdjustOverflow: false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -1209,7 +1194,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
@@ -1217,13 +1202,13 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     className: "logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, "Checkout", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Tooltip"], {
@@ -1232,7 +1217,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     autoAdjustOverflow: false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -1240,7 +1225,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
@@ -1248,7 +1233,7 @@ var _jsxFileName = "C:\\Users\\Jaime\\Documents\\CV\\components\\MyHeader.js";
     className: "logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }))))));

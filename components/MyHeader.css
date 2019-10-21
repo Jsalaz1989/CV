@@ -5,18 +5,18 @@
 	max-width: 100%;
     height: auto;
     
-    height: 300px; 
+    height: 400px; 
     width: 300px; 
     border-radius: 100%;
 
-    margin-top: 120px;
+    margin-top: 180px;
     position: absolute;
-    top: -90px;
+    top: -130px;
     right: 270px;
 }
 
 .header {
-    margin-top: 90px;
+    margin-top: 200px;
     line-height: 90px;
 }
 
@@ -24,6 +24,8 @@
 
 .heading {
     font-size: 3em;
+    position: relative;
+    top: -10px;
 }
 
 .master {

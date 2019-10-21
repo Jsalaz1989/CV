@@ -8,11 +8,12 @@ export default () => (
         <img src='../static/images/me.jpg' className='avatar' />
         <Col span={16} className="heading">
              <Row>Jaime Salazar Lahera</Row>
-             <Row>
+             <Row>Master of Engineering</Row>
+             {/* <Row>
                  <span className='master'>Master </span> 
                  of
                  <span className='engineering'> Engineering</span> 
-             </Row>
+             </Row> */}
         </Col>
         <Col span={8} className='contact'>
             <Row>

@@ -66,9 +66,7 @@ const Tile = ({ tile }) => {
                     <Col span={12}>
                         <Carousel>
                             {tile.slides.map((slide, key) => 
-                                <div key={key} 
-                                // style={{ backgroundImage: `url(static/images/${slide.source})` }}
-                                >
+                                <div key={key}>
                                     {(slide.source.includes('jpg') || slide.source.includes('jpeg'))
                                         ? <div className='slide-image' style={{ backgroundImage: `url(static/images/${slide.source})` }} />
                                         : <iframe 
@@ -104,7 +102,6 @@ const Experience = ({ experience }) => (
             {experience.organization}, <span className='location'>{experience.location}</span>
         </Row>
         <ul>
-            {/* {experience.bullets.map((bullet, key) => <li key={key}>{bullet}</li>)} */}
             {experience.bullets.map((bullet, key) => <li key={key} dangerouslySetInnerHTML={{__html: bullet }} />)}
         </ul>
     </div>
@@ -125,11 +122,11 @@ export default () => (
     <div className='content-container'>
         <div className='entry'>
             <Divider className='divide'><Icon type="user" className='divider-icon' id='bio' />Bio</Divider>
-            <p>Graduate in MS Electromechanical Engineering at UPM (Spain) with a diverse background.</p>
-            <p>Interested in programming, robotics, automation (especially RPA), solar energy, and the environment.</p>
+            <p>Graduate in MS Electromechanical Engineering at UPM (Madrid, Spain) with a diverse background.</p>
+            <p>Interested in solar photovoltaics and the environment, as well as programming, robotics, and automation (especially RPA).</p>
             <p>Continuous learner.</p>
             <p className='cv-container'>
-                Feel free to <a href='../static/CV - Jaime Salazar Lahera.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>download my CV</a> 
+                Feel free to <a href='../static/Curriculum Vitae - Jaime Salazar Lahera.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>download my CV</a> 
             </p>
         </div>
         <div className='entry'>
@@ -146,7 +143,7 @@ export default () => (
             <p>I like to dabble in full-stack web programming and experiment with different technologies</p>
             <ul>
                 <li>This interactive CV/portfolio is built with NextJS, a server-side rendering framework for ReactJS</li>
-                <li>I have a hobby project at <a href='http://jplusplus.pythonanywhere.com/' title="N2T">jplusplus.pythonanywhere.com</a>, where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database</li>
+                <li>I have a hobby project at <a href='https://jsalaz1989.github.io/' title="N2T">https://jsalaz1989.github.io</a>, where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database</li>
             </ul>
         </div>
         <div className='entry'>

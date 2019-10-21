@@ -178,7 +178,7 @@ export const tiles = {
         ],
     },
     dobot: {
-        title: "Master's Internship",
+        title: 'Master´s Internship',
         source: '../static/images/dobot/dobot0.jpg',
         paragraphs: [
             `Our robotics professor asked a colleague and I to produce a series of laboratory exercises for his undergraduate 
@@ -286,8 +286,8 @@ export const experiences = {
     montes: {
         position: "Bachelor's Degree in Forestry Engineering",
         date: 'Spring 2009',
-        organization: 'Montgomery College',
-        location: 'Maryland, USA',
+        organization: 'ETS Ingeniería de Montes, Universidad Politécnica de Madrid',
+        location: 'Madrid, Spain',
         bullets: [
             'First and second year before transferring to the United States'
         ]
@@ -346,7 +346,7 @@ export const skills = {
         name: 'Programming Languages',
         bullets: [
             `<span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Python</span> (especially Flask)`,
-            'C (C++ if you count the Arduino language)',
+            'C (and C++ ~Arduino)',
             'SQL (SQLite3, PostgreSQL)',
             'Javascript (especially ReactJS)',
             'HTML, CSS',

@@ -61,11 +61,13 @@
 }
 
 .skill-bg {
-    background-image: url(/static/images/hacker.png);
+    background-image: url(/static/images/close.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: 70%;
     background-position: right bottom;
     /* opacity: 0.2; */
+    /* transform: scale(0.5); */
 }
 
 .exp-skill {

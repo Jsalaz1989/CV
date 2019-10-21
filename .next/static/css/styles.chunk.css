@@ -21091,23 +21091,25 @@ div.ant-typography-edit-content {
 	max-width: 100%;
     height: auto;
     
-    height: 300px; 
+    height: 400px; 
     width: 300px; 
     border-radius: 100%;
 
-    margin-top: 120px;
+    margin-top: 180px;
     position: absolute;
-    top: -90px;
+    top: -130px;
     right: 270px;
 }
 
 .header {
-    margin-top: 90px;
+    margin-top: 200px;
     line-height: 90px;
 }
 
 .heading {
     font-size: 3em;
+    position: relative;
+    top: -10px;
 }
 
 .master {
@@ -21203,11 +21205,13 @@ div.ant-typography-edit-content {
 }
 
 .skill-bg {
-    background-image: url(/static/images/hacker.png);
+    background-image: url(/static/images/close.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: 70%;
     background-position: right bottom;
     /* opacity: 0.2; */
+    /* transform: scale(0.5); */
 }
 
 .exp-skill {
