@@ -237,6 +237,12 @@ export default () => (
                 <Tile tile={tiles.bollos} />
                 <Tile tile={tiles.dobot} />
             </div> */}
+            <div className='tile-category'>Solar</div>
+            <div className='tiles-container'>
+                <Thumbnail tile={tiles.solar} slideNum={2} />
+                <Thumbnail tile={tiles.solar} slideNum={0} />
+                <Thumbnail tile={tiles.robot} slideNum={3} />
+            </div>
             <div className='tile-category'>Robotic Process Automation (RPA)</div>
             <div className='tiles-container'>
                 <Thumbnail tile={tiles.rpa} slideNum={0} />
@@ -253,7 +259,7 @@ export default () => (
             </div>
             <div className='tile-category'>Other experiences</div>
             <div className='tiles-container'>
-                <Thumbnail tile={tiles.solar} slideNum={2} />
+                {/* <Thumbnail tile={tiles.solar} slideNum={2} /> */}
                 <Thumbnail tile={tiles.english} slideNum={0} />
                 <Thumbnail tile={tiles.bollos} slideNum={0} />
                 <Thumbnail tile={tiles.dobot} slideNum={0} />
