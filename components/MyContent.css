@@ -7,6 +7,7 @@
 
 .entry {
     margin-bottom: 80px;
+    overflow: visible;
 }
 
 .ant-divider.ant-divider-horizontal.ant-divider-with-text-center:before {
@@ -90,8 +91,8 @@
     overflow-y: visible;
     overflow-x: scroll;  
 
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 0%;
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
@@ -102,10 +103,15 @@
     /* width: 100%; */
 
     /* clip-path: polygon(0% 0%, 200% 0, 800% 50%, 0 100%); */
+} 
+
+.tile-category {
+    margin: 0px;
 }
 
 .tile {
     /* padding: 0px; */
+    margin-right: 3px;
     /* background-color: transparent; */
     transition: transform .2s; 
     opacity: 0.7;
@@ -121,7 +127,7 @@
 }
 
 .tile:hover { 
-    transform: scale(1.5);
+    transform: scale(1.5) translate(0px, 20px);
     z-index: 9999;
     opacity: 1;
 }
@@ -133,7 +139,7 @@
     padding: 1px;
 
     object-fit: cover;
-    height: 100%;
+    height: 150px;
 }
 
 .tile-details {
@@ -149,11 +155,15 @@
     font-size: 0.4em;
     color: white;
     width: 100%;
+    height: auto;
     position: absolute;
     bottom: 0;
     padding: 0px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    /* background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 100%); */
+    /* background-color: black; */
 }
 
 .blocking {
@@ -202,10 +212,57 @@
 }
 
 .slide-image {
-    height: 400px;
+    height: 281px;
 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     margin-bottom: 10px;
 }
+
+
+.carousel {
+    margin: 30px;
+}
+
+
+
+.embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* .embed-responsive .slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.glow {
+    /* font-size: 80px; */
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+    to {
+      text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+    }
+  }

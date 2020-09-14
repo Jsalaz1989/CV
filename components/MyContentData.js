@@ -24,7 +24,7 @@ export const tiles = {
             'motorcycle battery (with an automatic shutoff system)',
             'solar panels (2 x 12 V = 24 V) and MPPT charger'
         ],
-        slides : [
+        slides: [
             {
                 source: 'robot/robot0.jpeg',
                 description: 'General view'
@@ -72,14 +72,15 @@ export const tiles = {
         ],
     },
     solar: {
-        title: 'PV Sales and Tech Support',
+        title: 'Backoffice Technician',
         source: '../static/images/solar/coolAndCasual.jpg',
         paragraphs: [
             `I began as a solar sales representative, climbing up on rooftops for measurements and designing residential 
             systems to propose to our customers. It was a great forray into the world of technology, consulting, and construction.`,
             `Over time I gained an interest in the technical side of the office as well as our products. I decided I wanted to 
             understand them better, which led me to embark on my Master's education in the following years. This implied taking 
-            a few evening classes for general engineering courses at a local community college while working (!) so I could start building a solid technical base. When I returned to Madrid I continued this preparatory stage at the 'Universidad Poltécnica de Madrid'
+            a few evening classes for general engineering courses at a local community college while working (!) so I could start building 
+            a solid technical base. When I returned to Madrid I continued this preparatory stage at the 'Universidad Poltécnica de Madrid'
             to ensure I could be successful in getting my Master's degree.`,
             `While at this position, in the field, I would help diagnose technical issues in our installations, such as a faulty 
             inverter. At the office, I learned about our day-to-day tasks and business flows, and I imagined these could be 
@@ -107,19 +108,28 @@ export const tiles = {
         title: 'Robotic Process Automation (RPA)',
         source: '../static/images/rpa/diploma0.jpg',
         paragraphs: [
-            `Apart from general Bash, PowerShell, Python, and JS scripting, I can apply a professional RPA suite to many tasks.`,
-            `In particular, UiPath provides a somewhat graphical but mostly VB.NET programming to automate processes involving 
-            text, images, forms, etc. I've been pretty impressed with its AI capabilities when extracting information from 
+            `Apart from general Bash, PowerShell, Python, and JS scripting, I can deploy UiPath robots to perform to many tasks.`,
+            `This RPA suite provides a graphical programming environment extensible with VB.NET scripting to automate processes involving 
+            text, images, forms, etc. I am always impressed with its AI capabilities when extracting information from 
             scanned documents, websites, and even virtual machines.`,
-            `UiPath offers an Advanced Certification consisting of a timed theoretical and practical exam and this diploma will 
-            technically last me until about next year. However, I don't expect the concepts learned will become outdated as I 
-            believe the general ideas will remain my RPA base for years. In fact, having taken their courses has made it very 
-            easy to then understand most programs such as BluePrism and Automation Anywhere.`       
+            `UiPath offers an Advanced Certification consisting of a timed theoretical and practical exam, which I hold since March 2019.`       
         ],                         
         slides: [
             {
+                source: 'https://www.youtube.com/embed/Z-ZkLzqqOyk',
+                description: 'Example of Dispatcher and Perfomer both using the ReFramework to generate a yearly report'
+            },
+            {
                 source: 'rpa/diploma0.jpg',
                 description: 'Advanced Certification Degree'
+            },
+            {
+                source: 'https://www.youtube.com/embed/oqmOZMgzT6w',
+                description: 'Extracting client information to generate a hash code and update the database'
+            },
+            {
+                source: 'https://www.youtube.com/embed/WkRhHXbwMwk',
+                description: 'Simple testing steps to check a workflow from one of the Academy assignments'
             },
             {
                 source: 'rpa/diploma1.jpg',
@@ -132,10 +142,6 @@ export const tiles = {
             {
                 source: 'rpa/diploma3.jpg',
                 description: 'Understanding their professional project framework (REFramework) and flows'
-            },
-            {
-                source: 'https://www.youtube.com/embed/i_Wq2fQJ8BE',
-                description: 'Extracting client information to generate a hash code and update the database'
             },
         ],
     },
@@ -234,13 +240,17 @@ export const experiences = {
         date: 'February 2019',
         organization: 'ETS Ingeniería y Diseño Industrial, Universidad Politécnica de Madrid',
         location: 'Madrid, Spain',
-        bullets: [
-            `Master's Thesis - <span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Autonomous Agricultural Robot</span>`,
-            'Programming Arduinos (I2C, MQTT, control PID) and Raspberry Pis (Flask, MongoDB)',
-            `Programming Siemens PLC with <span class='template-link' onclick="document.getElementById('${tiles.bollos.title}').click()">STEP7 and WinCC</span>`,
-            'Programming with NI LabView',  
-            `Programming <span class='template-link' onclick="document.getElementById('${tiles.dobot.title}').click()">robot kinematics</span> with MATLAB`,
-            'Simulation of electrical (QUCS) and mechanical (Festo FluidSIM, SAM) systems'
+        sections: [
+            {
+                bullets: [
+                    `Master's Thesis - <span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Autonomous Agricultural Robot</span>`,
+                    'Programming Arduinos (I2C, MQTT, control PID) and Raspberry Pis (Flask, MongoDB)',
+                    `Programming Siemens PLC with <span class='template-link' onclick="document.getElementById('${tiles.bollos.title}').click()">STEP7 and WinCC</span>`,
+                    'Programming with NI LabView',  
+                    `Programming <span class='template-link' onclick="document.getElementById('${tiles.dobot.title}').click()">robot kinematics</span> with MATLAB`,
+                    'Simulation of electrical (QUCS) and mechanical (Festo FluidSIM, SAM) systems'
+                ]
+            }
         ]
     },
     coursesETSIDI : {
@@ -248,8 +258,12 @@ export const experiences = {
         date: 'Fall 2015 - Spring 2016',
         organization: 'ETS Ingeniería y Diseño Industrial, Universidad Politécnica de Madrid',
         location: 'Madrid, Spain',
-        bullets: [
-            'Electronics, Automation, Circuit Theory, Thermodynamics, Fluids Mechanics'    
+        sections: [ 
+            {
+                bullets: [
+                    'Electronics, Automation, Circuit Theory, Thermodynamics, Fluids Mechanics'    
+                ]
+            }
         ]
     },
     coursesMC : {
@@ -257,8 +271,12 @@ export const experiences = {
         date: 'Spring 2014 - Spring 2015',
         organization: 'Montgomery College',
         location: 'Maryland, USA',
-        bullets: [
-            'Differential Equations, Physics III'    
+        sections: [
+            {
+                bullets: [
+                    'Differential Equations, Physics III'    
+                ]
+            }
         ]
     },
     undergrad: {
@@ -267,11 +285,15 @@ export const experiences = {
         date: 'December 2013',
         organization: 'University of Maryland, College Park',
         location: 'Maryland, USA',
-        bullets: [
-            'Graduated cum laude',
-            'Minored in Ecological Technology Design and Geographic Information Systems',
-            'Designed and constructed an anaerobic digestor for the university campus',
-            'Restoration of the Baltimore Harbor in collaboration with Biohabitats, Inc'
+        sections: [
+            {
+                bullets: [
+                    'Graduated cum laude',
+                    'Minored in Ecological Technology Design and Geographic Information Systems',
+                    'Designed and constructed an anaerobic digestor for the university campus',
+                    'Restoration of the Baltimore Harbor in collaboration with Biohabitats, Inc'
+                ]
+            }
         ]
     },
     associates: {
@@ -279,8 +301,12 @@ export const experiences = {
         date: 'Spring 2011',
         organization: 'Montgomery College',
         location: 'Maryland, USA',
-        bullets: [
-            "First 2 years of my Bachelor's Degree completed at my local community college"
+        sections: [
+            {
+                bullets: [
+                    "First 2 years of my Bachelor's Degree completed at my local community college"
+                ]
+            }
         ]
     },
     montes: {
@@ -288,33 +314,82 @@ export const experiences = {
         date: 'Spring 2009',
         organization: 'ETS Ingeniería de Montes, Universidad Politécnica de Madrid',
         location: 'Madrid, Spain',
-        bullets: [
-            'First and second year before transferring to the United States'
+        sections: [
+            {
+                bullets: [
+                    'First and second year before transferring to the United States'
+                ]
+            }
+        ]
+    },
+    rpa: {
+        id: 'rpa',
+        position: 'Automation and BO Technician',
+        date: 'November 2019 - Present',
+        organization: 'EDP Spain (Solar Division)',
+        location: 'Madrid, Spain',
+        sections: [
+            {
+                description: 'Proposal design and drafting for residential and small commercial PV installations',
+                bullets: [
+                    'Client energy profiling via hourly consumption curves or customer electric bills',
+                    'Integration of energy production data from PVGIS (European Commission platform) into our simulations',
+                    'Preliminary PV module layouts with SolarEdge Designer',
+                    'System sizing based on client energy consumption, available space, solar irradiance, etc.',
+                    'PV performance simulation: selfconsumption percentage, energy sellback, losses and degradation, electricity tariff, CAPEX, etc.'
+                ]
+            },
+            {
+                description: 'Automation of business processes with UiPath and Python',
+                bullets: [
+                    //`<span class='template-link' onclick="document.getElementById('${tiles.solar.title}').click()">PV system design</span> (residential and commercial) with SketchUp, SolarNexus, and Google Earth`,
+                    'Automated document batch generation: Excel, PDF',
+                    'Web scraping with selenium, scrapy, beautiful soup, and requests',
+                    'Google Maps interactions',
+                    'Online form filling and file downloads with selenium',
+                    'Downloading files from FTP server',
+                    'Xlsx/xls/csv manipulations and conversions',
+                    'Extraction and decryption of tarballs',
+                    'Recurring emails (including attachments)',
+                    'SAP desktop interactions with pyautogui'
+                ]
+            }
+        ]
+    },
+    solar0: {
+        id: 'solar0',
+        position: 'Backoffice Technician',
+        date: 'Junes 2013 - June 2015',
+        organization: 'Solar Solution LLC',
+        location: 'Washington, DC, USA',
+        sections: [
+            {
+                bullets: [
+                    'Automated document generation (JavaScript, Excel VBA) of proposals, interconnection agreements, and contracts',
+                    'Personal pipeline management (Excel)',
+                    'Rooftop measurements (including obstacles) in order to 3D model',
+                    `<span class='template-link' onclick="document.getElementById('${tiles.solar.title}').click()">PV system design</span> (residential and commercial) with SketchUp and Google Earth`,
+                    'Module string sizing to properly match inverter size with SMA Sunny Design',
+                    'Participation in local electrical inspections',
+                    'On-site and remote technical support and troubleshooting'
+                ]
+            }
         ]
     },
     solar1: {
         id: 'solar1',
-        position: 'Photovoltaic Sales and Technical Support',
-        date: 'Junes 2013 - June 2015',
-        organization: 'Solar Solution LLC',
-        location: 'Washington, DC, USA',
-        bullets: [
-            `<span class='template-link' onclick="document.getElementById('${tiles.solar.title}').click()">PV system design</span> (residential and commercial) with SketchUp, SolarNexus, and Google Earth`,
-            'Automated document generation (JavaScript, Excel, VBA) of proposals, interconnection agreements, and contracts',
-            'Participation in local electrical inspections',
-            'On-site technical support and troubleshooting'
-        ]
-    },
-    solar2 : {
-        id: 'solar2',
         position: 'Photovoltaic Apprentice',
         date: 'Junes 2013',
         organization: 'Earth Sun Energy Systems',
         location: 'West Virginia, USA',
-        bullets: [
-            'Assistance in the construction of a 24-panel system'
+        sections: [
+            {
+                bullets: [
+                    'Assistance in the construction of a 24-panel system'
+                ]
+            }
         ]
-    },
+    }
 }
 
 export const skills = {
@@ -327,13 +402,13 @@ export const skills = {
         ]
     },
     software: {
-        id: 'rpa',
+        id: 'software',
         name: 'Software',
         bullets: [
             `<span class='template-link' onclick="document.getElementById('${tiles.rpa.title}').click()">UiPath</span> RPA Developer Advanced Certification 2019`,
-            'VBA macros in Word and Excel, JavaScript in Adobe PDF',
+            'MS Office (esp. VBA macros)',
+            'Adobe PDF (esp. JavaScript)',
             'Siemens STEP7 and WinCC',
-            'Google SketchUp',
             'LabView',
             'MATLAB',
             'QUCS',
@@ -345,8 +420,8 @@ export const skills = {
         id: 'coding',
         name: 'Programming Languages',
         bullets: [
-            `<span class='template-link' onclick="document.getElementById('${tiles.robot.title}').click()">Python</span> (especially Flask)`,
-            'C (and C++ ~Arduino)',
+            `Python: RPA and <span class="template-link" onclick="document.getElementById('${tiles.robot.title}').click()">mechatronics</span>`,
+            'C',
             'SQL (SQLite3, PostgreSQL)',
             'Javascript (especially ReactJS)',
             'HTML, CSS',

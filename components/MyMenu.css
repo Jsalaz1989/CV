@@ -1,15 +1,20 @@
 .ant-menu-root {
     position: relative;
     top: 55px;
-    left: 100px;
+    /* left: 100px; */
 }
 
 .ant-layout-sider-trigger {
     top: 50px;
+    width: 10px;
+    padding-left: 20px;
+    visibility: hidden;
 }
 
 .ant-layout-sider-collapsed  > .ant-layout-sider-trigger {
-    left: 24px;
+    /* left: 24px; */
+    width: 100px;
+    padding-left: 27px;
 }
 
 .ant-menu-inline .ant-menu-item {
@@ -54,12 +59,12 @@
 .menu-border {
     /* background-color: red; */
     height: 90vh;
-    padding-right: 10%;
+    padding-right: 5%;
     border-right-style: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.15);
     position: fixed;
-    left: -40px;
+    /* left: -40px; */
     /* opacity: 0.2 */
 }
 

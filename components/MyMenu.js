@@ -1,6 +1,6 @@
 import { Menu, Icon, Tooltip, Anchor } from 'antd'
-import GraduationIcon from '../static/graduation-hat.svg'
-import BriefcaseIcon from '../static/briefcase.svg'
+import GraduationIcon from '../public/static/graduation-hat.svg'
+import BriefcaseIcon from '../public/static/briefcase.svg'
 
 
 import './MyMenu.css'
@@ -24,8 +24,31 @@ export default () => {
 		document.getElementById(id).click()
 	}
 
+	function collapseSide(evt) {
+		if (evt.target.id == 'menu-border') {
+			console.log('Click on menu-border')
+			document.getElementsByClassName('ant-layout-sider-trigger')[0].click()
+		}	
+	}
+
+	function highlightTrigger(evt) {
+		if (evt.target.id == 'menu-border') {
+			console.log('mouseIn over menu-border')
+			evt.target.style.borderColor = 'rgba(255,255,255,1)'
+			evt.target.style.cursor = 'pointer'
+		}	
+	}
+
+	function unHighlightTrigger(evt) {
+		if (evt.target.id == 'menu-border') {
+			console.log('mouseOut over menu-border')
+			evt.target.style.borderColor = 'rgba(255,255,255,0.15)'
+			evt.target.style.cursor = 'default'
+		}	
+	}
+
 	return (
-		<div className='menu-border'>
+		<div className='menu-border' id='menu-border' onClick={collapseSide} onMouseEnter={highlightTrigger} onMouseLeave={unHighlightTrigger}>
 			<Menu
 				onClick={handleClick}
 				// style={{ width: 256 }}
@@ -71,7 +94,7 @@ export default () => {
 					</Menu.Item>
 					<Menu.Item key="b-cv">
 						<Tooltip placement='right' title='Download as PDF' autoAdjustOverflow={false} >
-							<a href='../static/cv.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>
+							<a href='static/CV - Jaime Salazar Lahera.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>
 								CV
 							</a> 
 						</Tooltip>
@@ -81,12 +104,42 @@ export default () => {
 					key="highlights"
 					title={<><Icon type="trophy" /><span>Highlights</span></>}
 				>
+					<Menu.Item key="h-rpa" 		onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
 					<Menu.Item key="h-master"	onClick={() => openHighlight(tiles.robot.title)}>Master's Thesis</Menu.Item>
-					<Menu.Item key="h-solar" onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
-					<Menu.Item key="h-rpa" onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
-					<Menu.Item key="h-english" onClick={() => openHighlight(tiles.english.title)}>English</Menu.Item>
-					<Menu.Item key="h-plc" onClick={() => openHighlight(tiles.bollos.title)}>PLC</Menu.Item>
-					<Menu.Item key="h-dobot" onClick={() => openHighlight(tiles.dobot.title)}>Dobot</Menu.Item>
+					<Menu.Item key="h-solar" 	onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
+					<Menu.Item key="h-english"	onClick={() => openHighlight(tiles.english.title)}>English</Menu.Item>
+					<Menu.Item key="h-plc"		onClick={() => openHighlight(tiles.bollos.title)}>PLC</Menu.Item>
+					<Menu.Item key="h-dobot" 	onClick={() => openHighlight(tiles.dobot.title)}>Dobot</Menu.Item>
+				</SubMenu>
+				<SubMenu
+					key="professional"
+					title={
+						<div
+							onMouseOver={()=>setSubmenuHovered('professional')} 
+							onMouseOut={()=>setSubmenuHovered(false)}
+						>
+							<BriefcaseIcon 
+								className={`custom-icon ${submenuHovered === 'professional' ? 'custom-icon-hover' : 'custom-icon-nohover'}`} 
+							/>
+							<span>Professional</span>
+						</div>
+					}
+				>
+					<Menu.Item key="p-solar0">
+						<Anchor offsetTop={30} affix={false}>
+							<Link href="#solar0" title="RPA Developer @ EDP Solar" />
+						</Anchor>
+					</Menu.Item>
+					<Menu.Item key="p-solar1">
+						<Anchor offsetTop={30} affix={false}>
+							<Link href="#solar1" title="PV Sales and Tech" />
+						</Anchor>
+					</Menu.Item>
+					<Menu.Item key="p-solar2">
+						<Anchor offsetTop={30} affix={false}>
+							<Link href="#solar2" title="PV Apprentice" />
+						</Anchor>
+					</Menu.Item>
 				</SubMenu>
 				<SubMenu
 					key="academics"
@@ -110,31 +163,6 @@ export default () => {
 					<Menu.Item key="a-undergrad">
 						<Anchor offsetTop={30} affix={false}>
 							<Link href="#undergrad" title="Bachelor's Degree" />
-						</Anchor>
-					</Menu.Item>
-				</SubMenu>
-				<SubMenu
-					key="professional"
-					title={
-						<div
-							onMouseOver={()=>setSubmenuHovered('professional')} 
-							onMouseOut={()=>setSubmenuHovered(false)}
-						>
-							<BriefcaseIcon 
-								className={`custom-icon ${submenuHovered === 'professional' ? 'custom-icon-hover' : 'custom-icon-nohover'}`} 
-							/>
-							<span>Professional</span>
-						</div>
-					}
-				>
-					<Menu.Item key="p-solar1">
-						<Anchor offsetTop={30} affix={false}>
-							<Link href="#solar1" title="PV Sales and Tech" />
-						</Anchor>
-					</Menu.Item>
-					<Menu.Item key="p-solar2">
-						<Anchor offsetTop={30} affix={false}>
-							<Link href="#solar2" title="PV Apprentice" />
 						</Anchor>
 					</Menu.Item>
 				</SubMenu>

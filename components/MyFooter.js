@@ -10,10 +10,6 @@ export default () => (
             from <a href="https://www.flaticon.com/" title="Flaticon">flaticon.com</a>&nbsp;
             licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </div>
-        <div>
-            Hacker image taken from &nbsp; 
-            <a href="https://www.freepik.com/?definition=57440181.2b280e4850f4c1ec2089ed375686d7f8.1563036135837.1563541010050.1563544657064.8&__hssc=57440181.3.1563544657064&__hsfp=2910948437" title="Lifewire">this Lifewire article</a> 
-        </div>
-        <div className='my-copyright'>Jaime Salazar Lahera &copy; 2019</div>
+        <div className='my-copyright'>Jaime Salazar Lahera &copy; {new Date().getFullYear()}</div>
     </div>
 )
