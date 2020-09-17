@@ -330,16 +330,6 @@ export const experiences = {
         location: 'Madrid, Spain',
         sections: [
             {
-                description: 'Proposal design and drafting for residential and small commercial PV installations',
-                bullets: [
-                    'Client energy profiling via hourly consumption curves or customer electric bills',
-                    'Integration of energy production data from PVGIS (European Commission platform) into our simulations',
-                    'Preliminary PV module layouts with SolarEdge Designer',
-                    'System sizing based on client energy consumption, available space, solar irradiance, etc.',
-                    'PV performance simulation: selfconsumption percentage, energy sellback, losses and degradation, electricity tariff, CAPEX, etc.'
-                ]
-            },
-            {
                 description: 'Automation of business processes with UiPath and Python',
                 bullets: [
                     //`<span class='template-link' onclick="document.getElementById('${tiles.solar.title}').click()">PV system design</span> (residential and commercial) with SketchUp, SolarNexus, and Google Earth`,
@@ -352,6 +342,16 @@ export const experiences = {
                     'Extraction and decryption of tarballs',
                     'Recurring emails (including attachments)',
                     'SAP desktop interactions with pyautogui'
+                ]
+            },
+            {
+                description: 'Proposal design and drafting for residential and small commercial PV installations',
+                bullets: [
+                    'Client energy profiling via hourly consumption curves or customer electric bills',
+                    'Integration of energy production data from PVGIS (European Commission platform) into our simulations',
+                    'Preliminary PV module layouts with SolarEdge Designer',
+                    'System sizing based on client energy consumption, available space, solar irradiance, etc.',
+                    'PV performance simulation: selfconsumption percentage, energy sellback, losses and degradation, electricity tariff, CAPEX, etc.'
                 ]
             }
         ]
