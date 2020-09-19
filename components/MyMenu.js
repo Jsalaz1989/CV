@@ -104,9 +104,9 @@ export default () => {
 					key="highlights"
 					title={<><Icon type="trophy" /><span>Highlights</span></>}
 				>
+					<Menu.Item key="h-solar" 	onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
 					<Menu.Item key="h-rpa" 		onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
 					<Menu.Item key="h-master"	onClick={() => openHighlight(tiles.robot.title)}>Master's Thesis</Menu.Item>
-					<Menu.Item key="h-solar" 	onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
 					<Menu.Item key="h-english"	onClick={() => openHighlight(tiles.english.title)}>English</Menu.Item>
 					<Menu.Item key="h-plc"		onClick={() => openHighlight(tiles.bollos.title)}>PLC</Menu.Item>
 					<Menu.Item key="h-dobot" 	onClick={() => openHighlight(tiles.dobot.title)}>Dobot</Menu.Item>
