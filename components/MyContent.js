@@ -220,7 +220,7 @@ export default () => (
         <div className='entry'>
             <Divider className='divide'><Icon type="user" className='divider-icon' id='bio' />Bio</Divider>
             <p>Robot creator at EDP Solar. Graduate in MS Electromechanical Engineering at UPM (Madrid, Spain) with a diverse background.</p>
-            <p>Interested in automation and programming (especially RPA), robotics, solar photovoltaics, the environment, and the Oxford comma.</p>
+            <p>Interested in automation, solar photovoltaics, and the Oxford comma.</p>
             <p>Continuous learner.</p>
             <p className='cv-container'>
                 Feel free to <a href='static/CV - Jaime Salazar Lahera.pdf' title='CV - Jaime Salazar Lahera' download='CV - Jaime Salazar Lahera'>download my CV</a> 
