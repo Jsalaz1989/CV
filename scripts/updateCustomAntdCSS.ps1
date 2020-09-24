@@ -1,0 +1,1 @@
+lessc --js node_modules\antd\dist\my-theme.less pages/custom-antd.css

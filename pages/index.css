@@ -1,0 +1,30 @@
+
+
+.big-layout {
+    height: auto;
+    color: white;
+    padding: 50px;
+}
+
+/* .side {
+    border-right-color: rgba(255, 255, 255, 0.15);
+    border-right-style: solid;
+    border-width: 1px;
+} */
+
+.head {
+    height: auto;
+}
+
+html {
+    background: #333;
+
+    /* Hide all scrollbars */
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE 10+ */
+}
+
+/* Hide all scrollbars in Chrome and Mac (?) */
+::-webkit-scrollbar { 
+    display: none; 
+}
