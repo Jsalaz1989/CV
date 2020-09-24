@@ -359,7 +359,7 @@ export const experiences = {
     solar0: {
         id: 'solar0',
         position: 'Backoffice Technician',
-        date: 'Junes 2013 - June 2015',
+        date: 'June 2013 - June 2015',
         organization: 'Solar Solution LLC',
         location: 'Washington, DC, USA',
         sections: [
@@ -379,7 +379,7 @@ export const experiences = {
     solar1: {
         id: 'solar1',
         position: 'Photovoltaic Apprentice',
-        date: 'Junes 2013',
+        date: 'June 2013',
         organization: 'Earth Sun Energy Systems',
         location: 'West Virginia, USA',
         sections: [
