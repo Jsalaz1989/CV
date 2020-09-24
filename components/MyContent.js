@@ -224,9 +224,9 @@ export default () => (
             <p>Continuous learner.</p>
             <p className='cv-container'>
                 Download my CV in 
-                    <a href='static/CV (English) - Jaime Salazar Lahera.pdf' title='CV (English) - Jaime Salazar Lahera' download='CV (English) - Jaime Salazar Lahera'>English</a> 
+                    &nbsp;<a href='static/CV (English) - Jaime Salazar Lahera.pdf' title='CV (English) - Jaime Salazar Lahera' download='CV (English) - Jaime Salazar Lahera'>English</a> 
                     &nbsp;or&nbsp;  
-                    <a href='static/CV (Spanish) - Jaime Salazar Lahera.pdf' title='CV (Spanish) - Jaime Salazar Lahera' download='CV (Spanish) - Jaime Salazar Lahera'>Spanish</a>
+                    &nbsp;<a href='static/CV (Spanish) - Jaime Salazar Lahera.pdf' title='CV (Spanish) - Jaime Salazar Lahera' download='CV (Spanish) - Jaime Salazar Lahera'>Spanish</a>
                 or scroll down for details.
             </p>
         </div>
