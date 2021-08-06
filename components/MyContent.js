@@ -1,6 +1,7 @@
 import './MyContent.css'
 
-import { Divider, Button, Row, Col, Icon, Modal, Carousel } from 'antd'
+import { Divider, Row, Col, Modal, Carousel, Space } from 'antd'
+import { TrophyOutlined, UserOutlined, StarOutlined } from '@ant-design/icons'
 
 import GraduationIcon from '../public/static/graduation-hat.svg'
 import BriefcaseIcon from '../public/static/briefcase.svg'
@@ -184,22 +185,22 @@ const Tile = ({ tile }) => {
 
 const Experience = ({ experience }) => (
     <div id={experience.id} className='exp-skill'>
-        <Row type="flex" justify="space-between" align='middle' className='butt'>
-            <div className='position'>{experience.position}</div>
-            <div>{experience.date}</div>                
+        <Row type="flex" justify="space-between" align="middle" style={{display: 'flex', justifyContent: 'space-between'}}>
+            <div className='position' style={{width:'100%'}}>{experience.position}</div>
+            <div style={{width:'100%', display: 'flex', justifyContent: 'flex-end'}}>{experience.date}</div>                
         </Row>
         <Row>
             {experience.organization}, <span className='location'>{experience.location}</span>
         </Row>
         {experience.sections.map(section => (
-            <>    
+            <span className='exp-detail'>    
                 <Row>
                     <span className='descript'>{section.description}</span>
                 </Row>        
                 <ul>
                     {section.bullets.map((bullet, key) => <li key={key} dangerouslySetInnerHTML={{__html: bullet }} />)}
                 </ul>
-            </>
+            </span>
         ))}
     </div>
 )
@@ -215,10 +216,10 @@ const Skill = ({ skill }) => (
     </div>
 )
 
-export default () => (
+const MyContent = () => (
     <div className='content-container'>
         <div className='entry'>
-            <Divider className='divide'><Icon type="user" className='divider-icon' id='bio' />Bio</Divider>
+            <Divider className='divide'><UserOutlined className='divider-icon' id='bio' />Bio</Divider>
             <p>Robot creator at EDP Solar. Graduate in MS Electromechanical Engineering at UPM (Madrid, Spain) with a diverse background.</p>
             <p>Interested in automation, solar photovoltaics, and the Oxford comma.</p>
             <p>Continuous learner.</p>
@@ -231,7 +232,7 @@ export default () => (
             </p>
         </div>
         <div className='entry'>
-            <Divider><Icon type="trophy" className='divider-icon' />Hightlights</Divider>
+            <Divider><TrophyOutlined className='divider-icon' />Hightlights</Divider>
             {/* <p>Take a look at some of my projects, achievements, and experiences through the years</p>
             <div className='tiles-container'>
                 <Tile tile={tiles.robot} />
@@ -277,6 +278,7 @@ export default () => (
         </div>
         <div className='entry'>
             <Divider><BriefcaseIcon className='divider-icon-2' />Professional</Divider>
+            <Experience experience={experiences.rpa1} />
             <Experience experience={experiences.rpa} />
             <Experience experience={experiences.solar0} />
             <Experience experience={experiences.solar1} />
@@ -291,7 +293,7 @@ export default () => (
             <Experience experience={experiences.montes} />
         </div>
         <div className='entry'>
-            <Divider><Icon type="star" className='divider-icon-2' />Skills</Divider>
+            <Divider><StarOutlined className='divider-icon-2' />Skills</Divider>
             <Skill skill={skills.english} />
             <div className='skill-bg'>
                 <Skill skill={skills.software} />
@@ -300,3 +302,5 @@ export default () => (
         </div>
     </div>
 )
+
+export default MyContent

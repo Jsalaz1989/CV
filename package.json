@@ -12,10 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
     "@svgr/webpack": "^4.3.3",
     "@zeit/next-css": "^1.0.1",
-    "antd": "^3.26.18",
-    "next": "^9.4.4",
+    "antd": "^4.9.1",
+    "next": "^10.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

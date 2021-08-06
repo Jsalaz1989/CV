@@ -1,18 +1,160 @@
 /* Source: https://flexbox.ninja/demos/website-header/ */
 
 /* Responsive images */
-.avatar {
+/* .avatar {
 	max-width: 100%;
-    height: auto;
     
     height: 400px; 
     width: 300px; 
     border-radius: 100%;
 
-    margin-top: 180px;
-    position: absolute;
-    top: -140px;
+    /* margin-top: 180px; */
+/*position: absolute;
+    top: -200px;
     right: 240px;
+} */
+
+@media only screen and (min-width: 425px) {
+    .avatar {
+        max-width: 100%;
+
+        height: 100px;
+        width: 600px;
+        border-radius: 100%;
+
+        /* margin-top: 180px; */
+        position: absolute;
+        top: -100px;
+        right: 0px;
+    }
+
+    .heading {
+        font-size: 3em;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact {
+        font-size: 0.9em;
+        text-align: right;
+        line-height: 3.5em;
+        position: relative;
+        top: 55px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .avatar {
+        max-width: 100%;
+
+        height: 200px;
+        width: 150px;
+        border-radius: 100%;
+
+        /* margin-top: 180px; */
+        position: absolute;
+        top: -150px;
+        right: 60px;
+    }
+
+    .heading {
+        font-size: 1em;
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+
+    .contact {
+        font-size: 0.8em;
+        text-align: right;
+        line-height: 3.5em;
+        position: relative;
+        top: 85px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .avatar {
+        max-width: 100%;
+
+        height: 350px;
+        width: 250px;
+        border-radius: 100%;
+
+        /* margin-top: 180px; */
+        position: absolute;
+        top: -200px;
+        right: 80px;
+    }
+
+    .heading {
+        font-size: 2em;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact {
+        font-size: 0.9em;
+        text-align: right;
+        line-height: 3.5em;
+        position: relative;
+        top: 75px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .avatar {
+        max-width: 100%;
+
+        height: 400px;
+        width: 300px;
+        border-radius: 100%;
+
+        /* margin-top: 180px; */
+        position: absolute;
+        top: -200px;
+        right: 140px;
+    }
+
+    .heading {
+        font-size: 3em;
+        position: relative;
+        top: 50px;
+    }
+
+    .contact {
+        font-size: 1em;
+        text-align: right;
+        line-height: 3.5em;
+        position: relative;
+        top: 70px;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    .avatar {
+        max-width: 100%;
+
+        height: 400px;
+        width: 300px;
+        border-radius: 100%;
+
+        /* margin-top: 180px; */
+        position: absolute;
+        top: -200px;
+        right: 240px;
+    }
+
+    .heading {
+        font-size: 6em;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+
+    .contact {
+        font-size: 2em;
+        text-align: right;
+        line-height: 3.5em;
+        position: relative;
+        top: 5px;
+    }
 }
 
 .header {
@@ -20,13 +162,13 @@
     line-height: 90px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Inconsolata');
+@import url("https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Inconsolata");
 
-.heading {
+/* .heading {
     font-size: 3em;
     position: relative;
     top: 50px;
-}
+} */
 
 .master {
     font-family: Monsieur La Doulaise;
@@ -36,16 +178,16 @@
     font-family: Inconsolata;
 }
 
-.contact {
+/* .contact {
     font-size: 0.9em;
     text-align: right;
     line-height: 3.5em;
     position: relative;
     top: 55px;
-}
+} */
 
 .tooltip-text {
-    font-size: 0.5em;   
+    font-size: 0.5em;
 }
 
 .logo {

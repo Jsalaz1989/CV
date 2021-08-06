@@ -1,4 +1,5 @@
-import { Menu, Icon, Tooltip, Anchor } from 'antd'
+import { Menu, Tooltip, Anchor } from 'antd'
+import { StarOutlined, TrophyOutlined, UserOutlined, MailOutlined } from '@ant-design/icons'
 import GraduationIcon from '../public/static/graduation-hat.svg'
 import BriefcaseIcon from '../public/static/briefcase.svg'
 
@@ -59,7 +60,7 @@ export default () => {
 			>
 				<SubMenu
 					key="contact"
-					title={<><Icon type="mail" /><span>Contact</span></>}
+					title={<><MailOutlined /><span>Contact</span></>}
 				>
 					<Menu.Item key="c-email" onClick={copyEmail}>
 						<Tooltip placement='right' title='Copy my email to your clipboard' autoAdjustOverflow={false} >
@@ -85,7 +86,7 @@ export default () => {
 				</SubMenu>
 				<SubMenu
 					key="bio"
-					title={<><Icon type="user" /><span>Bio</span></>}
+					title={<><UserOutlined /><span>Bio</span></>}
 				>
 					<Menu.Item key="b-about">
 						<Anchor offsetTop={30} affix={false}>
@@ -102,7 +103,7 @@ export default () => {
 				</SubMenu>
 				<SubMenu
 					key="highlights"
-					title={<><Icon type="trophy" /><span>Highlights</span></>}
+					title={<><TrophyOutlined /><span>Highlights</span></>}
 				>
 					<Menu.Item key="h-solar" 	onClick={() => openHighlight(tiles.solar.title)}>Solar</Menu.Item>
 					<Menu.Item key="h-rpa" 		onClick={() => openHighlight(tiles.rpa.title)}>RPA</Menu.Item>
@@ -168,7 +169,7 @@ export default () => {
 				</SubMenu>
 				<SubMenu
 					key="skills"
-					title={<><Icon type='star' /><span>Skills</span></>}
+					title={<><StarOutlined /><span>Skills</span></>}
 				>
 					<Menu.Item key="s-english">
 						<Anchor offsetTop={30} affix={false}>

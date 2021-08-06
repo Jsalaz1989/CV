@@ -51,6 +51,7 @@
 
 .position {
     font-weight: bold;
+    margin-left: 0;
 }
 
 .location {
@@ -256,13 +257,22 @@
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-  }
+}
   
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
-    }
-    to {
-      text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
-    }
-  }
+@-webkit-keyframes glow {
+from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+}
+to {
+    text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+}
+}
+
+/* .butt {
+    color: white;
+} */
+
+.exp-detail {
+    position: relative;
+    left: 30px;
+}
