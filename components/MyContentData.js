@@ -378,12 +378,22 @@ export const experiences = {
         position: "RPA Programmer Analyst",
         date: "January 2021 - Present",
         organization:
-            "John Bean Technologies Corporation, European Shared Service Center",
+            "John Bean Technologies Corporation, European Shared Services Center",
         location: "Madrid, Spain",
         sections: [
             {
                 description:
-                    "Automation of processes and data flows for the financial departments of the ESSC and NASSC",
+                    "Automation of processes and data flows for the financial departments of the European and North American Shared Services Centers",
+                bullets: [],
+            },
+            {
+                description:
+                    "API-based bots for automating and integrating the various products of the Microsoft Office suite via the Microsoft Graph API",
+                bullets: [],
+            },
+            {
+                description:
+                    "Leverage Azure services such as Azure SQL, Queues, Functions for customization and extension beyond the capabilities of the Power Platform",
                 bullets: [],
             },
             {
@@ -392,6 +402,7 @@ export const experiences = {
                 bullets: [
                     "Document upload and download to and from ERPs",
                     "Data entry into online forms",
+                    "Exporting files from online reporting services",
                 ],
             },
             {
@@ -406,17 +417,23 @@ export const experiences = {
             {
                 description: "Data processing and delivery with Tableau",
                 bullets: [
-                    "Connection to DBs and OneDrive Excel files",
+                    "Connection to SQL DBs and OneDrive Excel files",
                     "KPI reporting dashboards",
+                    "Use of the Tableau REST API to integrate Tableau flows with external automations (eg. Power Automate flows)",
                 ],
             },
             {
                 description:
                     "Excel automation with Python, Blue Prism, VBA, Power Automate, Office Scripts",
                 bullets: [
-                    "Automated reporting",
-                    "Massive file uploads (eg. CSV)",
+                    "Python (pandas, openpyxl, xlwings) and Office Scripts for custom data processing",
+                    "Generation of massive upload files (eg. CSV)",
                 ],
+            },
+            {
+                description:
+                    "Deployment and maintenance of bots on company virtual machines or Power Platform environments",
+                bullets: [],
             },
             {
                 description: "App creation (forms, DB storage) with Power Apps",
@@ -439,7 +456,7 @@ export const experiences = {
             },
             {
                 description:
-                    "Regular meetings with department heads for requirements gathering and project delivery in a highly bilingual environment",
+                    "Regular meetings with the various department heads in North America and Europe in a business analyst capacity (requirements gathering and project delivery)",
                 bullets: [],
             },
         ],

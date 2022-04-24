@@ -1,15 +1,15 @@
-import './MyContent.css'
+import "./MyContent.css";
 
-import { Divider, Row, Col, Modal, Carousel, Space } from 'antd'
-import { TrophyOutlined, UserOutlined, StarOutlined } from '@ant-design/icons'
+import { Divider, Row, Col, Modal, Carousel, Space } from "antd";
+import { TrophyOutlined, UserOutlined, StarOutlined } from "@ant-design/icons";
 
-import GraduationIcon from '../public/static/graduation-hat.svg'
-import BriefcaseIcon from '../public/static/briefcase.svg'
+import GraduationIcon from "../public/static/graduation-hat.svg";
+import BriefcaseIcon from "../public/static/briefcase.svg";
 
-import { useState, useRef } from 'react'
+import { useState, useRef } from "react";
 
-import { tiles, experiences, skills } from './MyContentData'
-import { ExceptionMap } from 'antd/lib/result'
+import { tiles, experiences, skills } from "./MyContentData";
+import { ExceptionMap } from "antd/lib/result";
 
 // function enableTileOverflow() {
 //     console.log('enableTileOverflow()')
@@ -23,45 +23,55 @@ import { ExceptionMap } from 'antd/lib/result'
 // }
 
 function enableTileOverflow() {
-    console.log('enableTileOverflow()')
-    document.getElementsByClassName('tiles-container')[0].style.clipath = '5%'
+    console.log("enableTileOverflow()");
+    document.getElementsByClassName("tiles-container")[0].style.clipath = "5%";
 }
 
 function disableTileOverflow() {
-    console.log('disableTileOverflow()')
-    document.getElementsByClassName('tiles-container')[0].style.left = 0
+    console.log("disableTileOverflow()");
+    document.getElementsByClassName("tiles-container")[0].style.left = 0;
 }
 
 const Thumbnail = ({ tile, slideNum }) => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     const [slide, setSlide] = useState(slideNum);
     const slider = useRef();
 
     return (
         <>
-            <div 
-                className='tile' 
-                onClick={() => setOpen(!open)} 
-                id={tile.title} 
+            <div
+                className="tile"
+                onClick={() => setOpen(!open)}
+                id={tile.title}
             >
                 <div>
-                    {(tile.slides[slideNum].source.includes('jpg') || tile.slides[slideNum].source.includes('jpeg'))
-                        ? <img className='tile-image' src={'../static/images/'+tile.slides[slideNum].source} />
-                        : <iframe 
-                                // width={100} 
-                                // height='auto'
-                                src={tile.slides[slideNum].source} 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen
-                                title={tile.slides[slideNum].source}
-                                crossOrigin='true'
-                            />
-                    }
+                    {tile.slides[slideNum].source.includes("jpg") ||
+                    tile.slides[slideNum].source.includes("jpeg") ? (
+                        <img
+                            className="tile-image"
+                            src={
+                                "../static/images/" +
+                                tile.slides[slideNum].source
+                            }
+                        />
+                    ) : (
+                        <iframe
+                            // width={100}
+                            // height='auto'
+                            src={tile.slides[slideNum].source}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title={tile.slides[slideNum].source}
+                            crossOrigin="true"
+                        />
+                    )}
                 </div>
-                <div className='tile-details'>
-                    <div className='tile-title'>{tile.slides[slideNum].description}</div>
+                <div className="tile-details">
+                    <div className="tile-title">
+                        {tile.slides[slideNum].description}
+                    </div>
                 </div>
             </div>
             <Modal
@@ -75,63 +85,82 @@ const Thumbnail = ({ tile, slideNum }) => {
                 closable={false}
                 footer={null}
             >
-                <Row type="flex" justify="space-around" align='middle'>
+                <Row type="flex" justify="space-around" align="middle">
                     <Col span={12}>
-                        {tile.paragraphs.map((paragraph, key) => <p key={key}>{paragraph}</p>)}
-                        {tile.bullets && 
+                        {tile.paragraphs.map((paragraph, key) => (
+                            <p key={key}>{paragraph}</p>
+                        ))}
+                        {tile.bullets && (
                             <ul>
-                                {tile.bullets.map((bullet, key) => <li key={key}>{bullet}</li>)}
+                                {tile.bullets.map((bullet, key) => (
+                                    <li key={key}>{bullet}</li>
+                                ))}
                             </ul>
-                        }
+                        )}
                     </Col>
                     <Col span={12}>
-                        <Carousel           
-                            ref={ref => {
+                        <Carousel
+                            ref={(ref) => {
                                 // console.log(ref);
                                 slider.current = ref;
-                                try { slider.current.goTo(slideNum); }
-                                catch { console.log('catch') }
+                                try {
+                                    slider.current.goTo(slideNum);
+                                } catch {
+                                    console.log("catch");
+                                }
                             }}
-                            className='carousel'
+                            className="carousel"
                         >
-                            {tile.slides.map((slide, key) => 
+                            {tile.slides.map((slide, key) => (
                                 <div key={key}>
                                     <p>{slide.description}</p>
-                                    <div className='embed-responsive'>
-                                        {(slide.source.includes('jpg') || slide.source.includes('jpeg'))
-                                            ?   <div className='slide-image' style={{ backgroundImage: `url(static/images/${slide.source})` }} />
-                                            :   <iframe 
-                                                    width="500" 
-                                                    height="281"
-                                                    src={slide.source} 
-                                                    frameBorder="0" 
-                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                                    allowFullScreen webkitallowfullscreen mozallowfullscreen
-                                                    title={slide.source}
-                                                    crossOrigin='true'
-                                                />
-                                        }
+                                    <div className="embed-responsive">
+                                        {slide.source.includes("jpg") ||
+                                        slide.source.includes("jpeg") ? (
+                                            <div
+                                                className="slide-image"
+                                                style={{
+                                                    backgroundImage: `url(static/images/${slide.source})`,
+                                                }}
+                                            />
+                                        ) : (
+                                            <iframe
+                                                width="500"
+                                                height="281"
+                                                src={slide.source}
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                title={slide.source}
+                                                crossOrigin="true"
+                                            />
+                                        )}
                                     </div>
                                 </div>
-                            )}
+                            ))}
                         </Carousel>
                     </Col>
                 </Row>
             </Modal>
         </>
-    )
-}
-
+    );
+};
 
 const Tile = ({ tile }) => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     return (
         <>
-            <div className='tile' onClick={() => setOpen(!open)} id={tile.title} >
-                <img className='tile-image' src={tile.source} />
-                <div className='tile-details'>
-                    <div className='tile-title'>{tile.title}</div>
+            <div
+                className="tile"
+                onClick={() => setOpen(!open)}
+                id={tile.title}
+            >
+                <img className="tile-image" src={tile.source} />
+                <div className="tile-details">
+                    <div className="tile-title">{tile.title}</div>
                 </div>
             </div>
             <Modal
@@ -145,94 +174,148 @@ const Tile = ({ tile }) => {
                 closable={false}
                 footer={null}
             >
-                <Row type="flex" justify="space-around" align='middle'>
+                <Row type="flex" justify="space-around" align="middle">
                     <Col span={12}>
-                        {tile.paragraphs.map((paragraph, key) => <p key={key}>{paragraph}</p>)}
-                        {tile.bullets && 
+                        {tile.paragraphs.map((paragraph, key) => (
+                            <p key={key}>{paragraph}</p>
+                        ))}
+                        {tile.bullets && (
                             <ul>
-                                {tile.bullets.map((bullet, key) => <li key={key}>{bullet}</li>)}
+                                {tile.bullets.map((bullet, key) => (
+                                    <li key={key}>{bullet}</li>
+                                ))}
                             </ul>
-                        }
+                        )}
                     </Col>
                     <Col span={12}>
                         <Carousel>
-                            {tile.slides.map((slide, key) => 
+                            {tile.slides.map((slide, key) => (
                                 <div key={key}>
-                                    {(slide.source.includes('jpg') || slide.source.includes('jpeg'))
-                                        ? <div className='slide-image' style={{ backgroundImage: `url(static/images/${slide.source})` }} />
-                                        : <iframe 
-                                                // width={100} 
-                                                height={400}
-                                                src={slide.source} 
-                                                frameBorder="0" 
-                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                                allowFullScreen
-                                                title={slide.source}
-                                                crossOrigin='true'
-                                            />
-                                    }
+                                    {slide.source.includes("jpg") ||
+                                    slide.source.includes("jpeg") ? (
+                                        <div
+                                            className="slide-image"
+                                            style={{
+                                                backgroundImage: `url(static/images/${slide.source})`,
+                                            }}
+                                        />
+                                    ) : (
+                                        <iframe
+                                            // width={100}
+                                            height={400}
+                                            src={slide.source}
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                            title={slide.source}
+                                            crossOrigin="true"
+                                        />
+                                    )}
                                     <p>{slide.description}</p>
                                 </div>
-                            )}
+                            ))}
                         </Carousel>
                     </Col>
                 </Row>
             </Modal>
         </>
-    )
-}
-
+    );
+};
 
 const Experience = ({ experience }) => (
-    <div id={experience.id} className='exp-skill'>
-        <Row type="flex" justify="space-between" align="middle" style={{display: 'flex', justifyContent: 'space-between'}}>
-            <div className='position' style={{width:'100%'}}>{experience.position}</div>
-            <div style={{width:'100%', display: 'flex', justifyContent: 'flex-end'}}>{experience.date}</div>                
+    <div id={experience.id} className="exp-skill">
+        <Row
+            type="flex"
+            justify="space-between"
+            align="middle"
+            style={{ display: "flex", justifyContent: "space-between" }}
+        >
+            <div className="position" style={{ width: "100%" }}>
+                {experience.position}
+            </div>
+            <div
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                }}
+            >
+                {experience.date}
+            </div>
         </Row>
         <Row>
-            {experience.organization}, <span className='location'>{experience.location}</span>
+            {experience.organization},{" "}
+            <span className="location">{experience.location}</span>
         </Row>
-        {experience.sections.map(section => (
-            <span className='exp-detail'>    
+        {experience.sections.map((section) => (
+            <span className="exp-detail">
                 <Row>
-                    <span className='descript'>{section.description}</span>
-                </Row>        
+                    <span className="descript">{section.description}</span>
+                </Row>
                 <ul>
-                    {section.bullets.map((bullet, key) => <li key={key} dangerouslySetInnerHTML={{__html: bullet }} />)}
+                    {section.bullets.map((bullet, key) => (
+                        <li
+                            key={key}
+                            dangerouslySetInnerHTML={{ __html: bullet }}
+                        />
+                    ))}
                 </ul>
             </span>
         ))}
     </div>
-)
+);
 
 const Skill = ({ skill }) => (
-    <div id={skill.id} className='exp-skill'>
-        <Row type="flex" justify="start" align='middle' className='position'>
+    <div id={skill.id} className="exp-skill">
+        <Row type="flex" justify="start" align="middle" className="position">
             {skill.name}
         </Row>
         <ul>
-            {skill.bullets.map((detail, key) => <li key={key} dangerouslySetInnerHTML={{__html: detail }} />)}
+            {skill.bullets.map((detail, key) => (
+                <li key={key} dangerouslySetInnerHTML={{ __html: detail }} />
+            ))}
         </ul>
     </div>
-)
+);
 
 const MyContent = () => (
-    <div className='content-container'>
-        <div className='entry'>
-            <Divider className='divide'><UserOutlined className='divider-icon' id='bio' />Bio</Divider>
-            <p>Robot creator at EDP Solar. Graduate in MS Electromechanical Engineering at UPM (Madrid, Spain) with a diverse background.</p>
-            <p>Interested in automation, solar photovoltaics, and the Oxford comma.</p>
-            <p>Continuous learner.</p>
-            <p className='cv-container'>
-                Download my CV in 
-                    &nbsp;<a href='static/CV (English) - Jaime Salazar Lahera.pdf' title='CV (English) - Jaime Salazar Lahera' download='CV (English) - Jaime Salazar Lahera'>English</a> 
-                    &nbsp;or  
-                    &nbsp;<a href='static/CV (Spanish) - Jaime Salazar Lahera.pdf' title='CV (Spanish) - Jaime Salazar Lahera' download='CV (Spanish) - Jaime Salazar Lahera'>Spanish</a>
-                    &nbsp;or scroll down for details.
+    <div className="content-container">
+        <div className="entry">
+            <Divider className="divide">
+                <UserOutlined className="divider-icon" id="bio" />
+                Bio
+            </Divider>
+            <p>
+                RPA professional with 4+ years of experience automating a
+                variety of business needs. Sports a penchant for programming
+                best practices and process improvement, providing skills crafted
+                in an international context.
+            </p>
+            <p className="cv-container">
+                Download my CV in &nbsp;
+                <a
+                    href="static/CV (English) - Jaime Salazar Lahera.pdf"
+                    title="CV (English) - Jaime Salazar Lahera"
+                    download="CV (English) - Jaime Salazar Lahera"
+                >
+                    English
+                </a>
+                &nbsp;or &nbsp;
+                <a
+                    href="static/CV (Spanish) - Jaime Salazar Lahera.pdf"
+                    title="CV (Spanish) - Jaime Salazar Lahera"
+                    download="CV (Spanish) - Jaime Salazar Lahera"
+                >
+                    Spanish
+                </a>
+                &nbsp;or scroll down for details.
             </p>
         </div>
-        <div className='entry'>
-            <Divider><TrophyOutlined className='divider-icon' />Hightlights</Divider>
+        <div className="entry">
+            <Divider>
+                <TrophyOutlined className="divider-icon" />
+                Hightlights
+            </Divider>
             {/* <p>Take a look at some of my projects, achievements, and experiences through the years</p>
             <div className='tiles-container'>
                 <Tile tile={tiles.robot} />
@@ -242,28 +325,30 @@ const MyContent = () => (
                 <Tile tile={tiles.bollos} />
                 <Tile tile={tiles.dobot} />
             </div> */}
-            <div className='tile-category'>Solar</div>
-            <div className='tiles-container'>
+            <div className="tile-category">Solar</div>
+            <div className="tiles-container">
                 <Thumbnail tile={tiles.solar} slideNum={2} />
                 <Thumbnail tile={tiles.solar} slideNum={0} />
                 <Thumbnail tile={tiles.robot} slideNum={3} />
             </div>
-            <div className='tile-category'>Robotic Process Automation (RPA)</div>
-            <div className='tiles-container'>
+            <div className="tile-category">
+                Robotic Process Automation (RPA)
+            </div>
+            <div className="tiles-container">
                 <Thumbnail tile={tiles.rpa} slideNum={0} />
                 <Thumbnail tile={tiles.rpa} slideNum={1} />
                 <Thumbnail tile={tiles.rpa} slideNum={2} />
                 <Thumbnail tile={tiles.rpa} slideNum={3} />
             </div>
-            <div className='tile-category'>Master's Thesis</div>
-            <div className='tiles-container'>
+            <div className="tile-category">Master's Thesis</div>
+            <div className="tiles-container">
                 <Thumbnail tile={tiles.robot} slideNum={0} />
                 <Thumbnail tile={tiles.robot} slideNum={5} />
                 <Thumbnail tile={tiles.robot} slideNum={6} />
                 <Thumbnail tile={tiles.robot} slideNum={7} />
             </div>
-            <div className='tile-category'>Other experiences</div>
-            <div className='tiles-container'>
+            <div className="tile-category">Other experiences</div>
+            <div className="tiles-container">
                 {/* <Thumbnail tile={tiles.solar} slideNum={2} /> */}
                 <Thumbnail tile={tiles.english} slideNum={0} />
                 <Thumbnail tile={tiles.bollos} slideNum={0} />
@@ -276,15 +361,21 @@ const MyContent = () => (
                 <li>I have a hobby project at <a href='https://jsalaz1989.github.io/' title="N2T">https://jsalaz1989.github.io</a>, where I'm trying to build a Single-Page Application (SPA) with a ReactJS frontend and a Flask (Python) backend connected to a PostGreSQL database</li>
             </ul> */}
         </div>
-        <div className='entry'>
-            <Divider><BriefcaseIcon className='divider-icon-2' />Professional</Divider>
+        <div className="entry">
+            <Divider>
+                <BriefcaseIcon className="divider-icon-2" />
+                Professional
+            </Divider>
             <Experience experience={experiences.rpa1} />
             <Experience experience={experiences.rpa} />
             <Experience experience={experiences.solar0} />
             <Experience experience={experiences.solar1} />
         </div>
-        <div className='entry'>
-            <Divider><GraduationIcon className='divider-icon-2' />Academics</Divider>
+        <div className="entry">
+            <Divider>
+                <GraduationIcon className="divider-icon-2" />
+                Academics
+            </Divider>
             <Experience experience={experiences.masters} />
             <Experience experience={experiences.coursesETSIDI} />
             <Experience experience={experiences.coursesMC} />
@@ -292,15 +383,18 @@ const MyContent = () => (
             <Experience experience={experiences.associates} />
             <Experience experience={experiences.montes} />
         </div>
-        <div className='entry'>
-            <Divider><StarOutlined className='divider-icon-2' />Skills</Divider>
+        <div className="entry">
+            <Divider>
+                <StarOutlined className="divider-icon-2" />
+                Skills
+            </Divider>
             <Skill skill={skills.english} />
-            <div className='skill-bg'>
+            <div className="skill-bg">
                 <Skill skill={skills.software} />
                 <Skill skill={skills.coding} />
             </div>
         </div>
     </div>
-)
+);
 
-export default MyContent
+export default MyContent;
